@@ -1,7 +1,7 @@
 {
     "name":"fresh-design/iiifx-qiwi",
     "type": "library",
-    "description": "Library for Qiwi payment",
+    "description": "Qiwi payment",
     "keywords": ["qiwi","pay"],
     "homepage": "https://github.com/fresh-design/iiifx-Qiwi.git",
     "version": "1.0.0",
@@ -16,6 +16,6 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "psr-0": {"iiifx/Qiwi": "src/"}
+        "psr-0": {"iiifx/Component/Payment/Qiwi": "src/"}
     }
 }

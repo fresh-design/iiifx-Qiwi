@@ -1,6 +1,6 @@
 <?php
 
-namespace iiifx\Qiwi;
+namespace iiifx\Component\Payment\Qiwi;
 
 /**
  * Class PaymentResponse
