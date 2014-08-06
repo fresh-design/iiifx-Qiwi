@@ -3,7 +3,8 @@ Qiwi
 
 Модуль оплаты Qiwi
 
-##### Подключение через Comoposer:
+### Подключение через Comoposer:
+
 
     "require": {
         ...
@@ -16,9 +17,12 @@ Qiwi
         }
     ]
 
-### Использование
 
-###### Выставить счет клиенту и отправить на оплату:
+### Использование:
+
+
+Выставить счет клиенту и отправить на оплату:
+
 
 ```php
     $qiwiPaymentRequest = new \iiifx\Component\Payment\Qiwi\PaymentRequest( $shopId, $apiId, $apiPassword );
@@ -48,7 +52,9 @@ Qiwi
     }
 ```
 
-###### Проверить статус оплаты
+
+Проверить статус оплаты:
+
 
 ```php
     $qiwiCheckRequest = new \iiifx\Component\Payment\Qiwi\CheckRequest( $shopId, $apiId, $apiPassword );
