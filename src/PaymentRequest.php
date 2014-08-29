@@ -271,7 +271,7 @@ class PaymentRequest {
      */
     public function getTransactionId () {
         if ( is_null( $this->_transactionId ) ) {
-            $this->_transactionId = 'QW-' . date( 'ymdHis' ) . '-' . $this->getPaymentAmount() . '-' . rand( 100, 999 );
+            $this->_transactionId = 'QW-' . date( 'ymdHis' ) . str_replace( '.', '', (float) $this->getPaymentAmount() ) . rand( 100, 999 );
         }
         return $this->_transactionId;
     }
